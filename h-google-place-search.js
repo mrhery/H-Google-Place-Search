@@ -148,5 +148,5 @@ function GPlaceSearch(obj){
 	
 	console.log(data.length + " data set created");
 	
-	return 0;
+	return data;
 }
