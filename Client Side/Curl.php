@@ -7,6 +7,7 @@ class Curl
     private $ch;
 
     /** @var mixed The response */
+    private $response = false;
 
     /**
      * @param string $url
