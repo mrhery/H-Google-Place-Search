@@ -1,4 +1,4 @@
-# CHange Log
+# Change Log
 23 June 2019 - Only works with JQuery, only works with `bundle_search` 
 
 # H-Google-Place-Search
