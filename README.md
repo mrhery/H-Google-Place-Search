@@ -40,6 +40,12 @@ obj-> {
 
   https://developers.google.com/places/web-service/supported_types
 		
+## RPC Call to Server
+Direct request from Javascript to Google API gives you some error/warning message and break the your program (due to Cross Origin Request issue). So, this JS API will request from a local server RPC which is will this RPC will call to Google API service.
+`Javascript GPSearch->RPC->Google API`
+
+You can try it with `rpc.php` which is a simple RPC call from PHP to Google API. This `rpc.php` use CURL (you can find CURL class in `Curl.php`).
+
 
 *This API seperated into two type of search:*
 
