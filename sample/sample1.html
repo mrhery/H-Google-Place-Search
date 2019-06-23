@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Sample 1 - H-GPSearch</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../h-google-place-search.js"></script>
+    
+    <script>
+      function sample1(){
+        var x = GPlaceSearch({
+          rpc: "rpc.php",
+          key: "your-google-place-api-key",
+          search: "bundle_search",
+          places: [
+            "johor bahru"
+          ],
+          types: [
+            "restaurant", "airport"
+          ],
+          fields: [
+            "name","rating","formatted_phone_number","opening_hours","website","reviews","international_phone_number","photos"
+          ],
+          radius: 10000
+        });
+        
+        $("#results").text(JSON.stringify(x));
+      }
+    </script>
+  </head>
+  
+  <body>
+    <button click="">Get Data</button><br /><br />
+    
+    <textarea id="results"></textarea>
+  </body>
+</html>
