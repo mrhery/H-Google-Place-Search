@@ -3,7 +3,7 @@
 include_once("Curl.php");
 include_once("GPSearch.php");
 try{
-    GPSearch::$key = "AIzaSyC5v_959WshV3Cjs1F4zVaV9B1qZbIdmXU";
+    GPSearch::$key = "your-google-api-key";
     
     $x = new GPSearch("bundle_search");
     $x->places = ["johor"];
