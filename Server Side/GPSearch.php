@@ -1,5 +1,10 @@
 <?php
-
+/**
+* Written by Mr Hery @ June 2019
+* 
+* Contact me: heryintelt@gmail.com
+* 
+*/
 class GPSearch{
     public static 
         $key = "", 
